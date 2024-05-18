@@ -20,4 +20,8 @@ Amplify.configure(outputs);
 })
 export class AppComponent {
   title = 'amplify-angular-template';
+
+  constructor(public authenticator: AuthenticatorService) {
+    Amplify.configure(outputs);
+  }
 }
